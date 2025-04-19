@@ -146,6 +146,11 @@
     {{- end }}
 </noscript>
 
+{{- /* MathJax 支持 */}}
+{{- if .Params.mathjax }}
+  {{- partial "mathjax.html" . }}
+{{- end }}
+
 {{- partial "extend_head.html" . -}}
 
 {{- /* Misc */}}
